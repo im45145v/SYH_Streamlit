@@ -4,7 +4,7 @@ import importlib.util
 
 # Set up the sidebar for navigation
 st.sidebar.title("Navigation")
-pages = ["Home", "About"]
+pages = ["Home", "About", "Thanos Snap"]
 selection = st.sidebar.radio("Go to", pages)
 
 # Load the pages from the `pages/` directory
@@ -21,3 +21,6 @@ if selection == "Home":
 elif selection == "About":
     about = load_page("about")
     about.main()
+elif selection == "Thanos Snap":
+    thanos_snap = load_page("thanos_snap")
+    thanos_snap.main()
