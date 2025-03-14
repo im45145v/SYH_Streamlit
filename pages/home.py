@@ -26,5 +26,24 @@ def main():
     for i in range(100):
         progress_bar.progress(i + 1)  # Special effect: Progress bar
 
+    # # Add a new tab for the hero or villain detector functionality
+    # tabs = st.tabs(["Home", "Hero or Villain Detector"])
+    # with tabs[0]:
+    #     st.write("This is the home tab.")
+    # with tabs[1]:
+    #     st.title("Hero or Villain Detector")
+    #     st.write("Upload a photo or use the camera to find out if you're a hero or a villain!")
+
+    #     uploaded_file = st.file_uploader("Choose a photo...", type=["jpg", "jpeg", "png"])
+    #     if uploaded_file is not None:
+    #         st.image(uploaded_file, caption="Uploaded Photo", use_column_width=True)
+    #         result = detect_hero_or_villain()
+    #         st.write(result)
+
+    #     if st.button("Use Camera"):
+    #         webrtc_streamer(key="example", video_frame_callback=video_frame_callback)
+    #         result = detect_hero_or_villain()
+    #         st.write(result)
+
 if __name__ == "__main__":
     main()
