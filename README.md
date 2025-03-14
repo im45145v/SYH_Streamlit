@@ -9,6 +9,7 @@ This repository contains a Streamlit multi-page app with a sidebar for navigatio
 - Sidebar for navigation
 - Home page with a welcome message
 - About page with information about the app
+- Trivia Quiz page with multiple-choice questions, feedback, and final score calculation
 
 ### Directory Structure
 
@@ -17,7 +18,9 @@ This repository contains a Streamlit multi-page app with a sidebar for navigatio
 ├── app.py
 └── pages
     ├── home.py
-    └── about.py
+    ├── about.py
+    ├── thanos_snap.py
+    └── trivia_quiz.py
 ```
 
 ### How to Run the App
