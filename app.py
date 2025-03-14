@@ -4,7 +4,7 @@ import importlib.util
 
 # Set up the sidebar for navigation
 st.sidebar.title("Navigation")
-pages = ["Home", "About", "Thanos Snap", "Trivia Quiz"]
+pages = ["Home", "About", "Thanos Snap", "Trivia Quiz", "Hero or Villain Detector"]
 selection = st.sidebar.radio("Go to", pages)
 
 # Load the pages from the `pages/` directory
@@ -27,3 +27,6 @@ elif selection == "Thanos Snap":
 elif selection == "Trivia Quiz":
     trivia_quiz = load_page("trivia_quiz")
     trivia_quiz.main()
+elif selection == "Hero or Villain Detector":
+    hero_villain_detector = load_page("hero_villain_detector")
+    hero_villain_detector.main()
